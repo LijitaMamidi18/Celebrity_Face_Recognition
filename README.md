@@ -11,18 +11,38 @@ To build and deploy a machine learning model that can classify a given input as 
 **Technologies & Tools Used**
 - Python
 - Pandas, NumPy
-- scikit-learn
+- scikit-learn, openCV
 - Matplotlib, Seaborn (for visualization)
 - Jupyter Notebook
 - Streamlit (for web interface)
 
 **ML Workflow**
-1. Data Collection – Gather data related to each player (could be images or features like name, sport, stats, etc.)
-2. Preprocessing – Clean and prepare the dataset
-3. Model Selection – Choose a classification algorithm (e.g., Logistic Regression, SVM, Random Forest, or CNN for image classification)
-4. Training – Train the model on labeled data
-5. Evaluation – Use metrics like accuracy, precision, recall to evaluate performance
-6. Deployment – Deploy using Streamlit for user interaction
+### 1. Data Collection
+- Gather data relevant to each sports personality by using different interfaces(fatkun extension, google image scrapping etc.)
+
+### 2. Data Preprocessing
+- Clean missing or noisy data
+- Resize/normalize images (for image classification)
+- Detection of face and eyes using OpenCV
+
+### 3. Model Selection
+- Choose a classification algorithm (e.g., Logistic Regression, SVM, Random Forest)
+
+### 4. Model Training
+- Train on labeled data with proper splits (train/test/validation)
+- Use cross-validation (Grid Search CV)
+
+### 5. Model Evaluation
+- Evaluate using metrics such as:
+  - Accuracy
+  - Precision & Recall
+  - Confusion Matrix
+
+### 6. Deployment
+- Use **Streamlit** to build a simple, interactive web interface
+- Users can upload an image or input features and get a classification result
+
+
 
 
 
